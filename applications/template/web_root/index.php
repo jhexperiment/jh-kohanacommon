@@ -6,14 +6,14 @@
  *
  * @see  http://docs.kohanaphp.com/install#application
  */
-$application = '..';
+$application = '';
 
 /**
  * The directory in which your modules are located.
  *
  * @see  http://docs.kohanaphp.com/install#modules
  */
-$modules = '../../../modules';
+$modules = '/media/www/kohana.common/modules/';
 
 /**
  * The directory in which the Kohana resources are located. The system
@@ -21,7 +21,7 @@ $modules = '../../../modules';
  *
  * @see  http://docs.kohanaphp.com/install#system
  */
-$system = '../../../system';
+$system = '/media/www/kohana.common/system/';
 
 /**
  * The default extension of resource files. If you change this, all resources
