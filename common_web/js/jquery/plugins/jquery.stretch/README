@@ -1,0 +1,34 @@
+Stretch jQuery Plugin:
+
+Expands text to fill up the entire width of its parent (or at least as much
+as possible). It does this in 2 ways. First, it finds the largest font-size
+for the text while keeping it on one line. If there is still some space
+left to fill, it will increase the gap between the words (word-spacing) to try
+and fill it in.
+
+For example, say we wanted to make the following title, "Sprockets and 
+Widgets" take up as much of the full 400px of width as possible:
+
+    <h1 style="width: 400px">Sprockets and Widgets</h1>
+    <script>
+        $("h1").contents().stretch();
+     </script>
+
+The actual implementation runs in O(log n) time, where n is the final font size. This makes it more efficient than many existing solutions.
+
+The plugin also takes an optional argument; a map of options. The possible
+properties are min, max, and maxSpacing. The min and max properties specify the
+min and max font size allowed. If 0, or omitted, then the minimum is 1, and the
+maximum is whatever size is necessary. The maxSpacing property can be used to
+set the maximum allowable amount of spacing between words (default is as large
+as needed).
+
+License:
+
+The plugin is licensed under the ISC license. A copy of the license is included
+in the header of the plugin itself.
+
+Authors:
+
+Tom Switzer (thomas.switzer at gmail)
+
