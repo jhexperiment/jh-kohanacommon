@@ -65,7 +65,7 @@ class Kohana_Log_File extends Kohana_Log_Writer {
 		foreach ($messages as $message)
 		{
 			// Write each message into the log file
-			file_put_contents($filename, PHP_EOL.strtr($format, $message), FILE_APPEND);
+			file_put_contents($filename, $message, FILE_APPEND);
 		}
 	}
 
